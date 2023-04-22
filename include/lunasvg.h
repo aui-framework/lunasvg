@@ -27,7 +27,7 @@
 #include <string>
 #include <cstdint>
 
-#include <lunasvg_export.h>
+#include "lunasvg_export.h"
 #define LUNASVG_API LUNASVG_EXPORT
 
 namespace lunasvg {
