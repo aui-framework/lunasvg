@@ -356,7 +356,7 @@ static void composition_source_over(uint32_t* dest, int length, const uint32_t* 
                 continue;
             }
             uint32_t color = BYTE_MUL(dest[i], 255 * dest_alpha / common_alpha) + BYTE_MUL(src[i], 255 * source_alpha / common_alpha);
-            color &= 0xffu << 24;
+            color &= 0x000000ffu;
             color |= common_alpha << 24;
             dest[i] = color;
         }
